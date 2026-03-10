@@ -16,19 +16,19 @@ const html = `<!DOCTYPE html>
     body {
       font-family: 'Press Start 2P', monospace;
       font-size: 20px;
-      background: #111;
+      background: #000;
       color: #fff;
       padding: 40px 50px;
       width: 800px;
       min-height: 260px;
       line-height: 2.4;
       box-sizing: border-box;
-      text-shadow: 0 0 4px #111, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(0,0,0,0.8);
+      text-shadow: 0 0 4px #000, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(0,0,0,0.8);
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    .red { color: #e53935; text-shadow: 0 0 4px #111, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(229,57,53,0.6); }
+    .red { color: #e53935; text-shadow: 0 0 4px #000, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(229,57,53,0.6); }
     a { color: #fff; text-decoration: none; font-size: 18px; }
   </style>
 </head>
