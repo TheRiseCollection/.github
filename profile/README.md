@@ -1,1 +1,1 @@
-[![Hero](./hero.png)](https://www.therisecollection.co/about-us/#contact-us)
+<a href="https://www.therisecollection.co/about-us/#contact-us"><img src="./hero.png" width="100%" alt="TheRiseCollection" /></a>

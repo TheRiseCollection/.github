@@ -15,15 +15,10 @@ const html = `<!DOCTYPE html>
     * { margin: 0; padding: 0; }
     body {
       background: #000;
-      padding: 24px;
+      padding: 32px 40px;
       font-family: 'Press Start 2P', monospace;
-    }
-    .terminal {
-      width: 840px;
-      border: 2px solid #00ff41;
-      padding: 28px 32px;
-      background: #000;
-      box-shadow: 0 0 20px rgba(0,255,65,0.3), inset 0 0 60px rgba(0,255,65,0.03);
+      width: 918px;
+      box-sizing: border-box;
     }
     .header {
       color: #00ff41;
@@ -45,20 +40,18 @@ const html = `<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <div class="terminal">
-    <div class="header">▶ SYSTEM ONLINE</div>
-    <div class="line">
-      <span class="prompt">></span> INNOVATING WITHOUT<br>
-      <span class="prompt">></span> FORGETTING TO BE CREATIVE<br><br>
-      <span class="prompt">></span> <span class="nowrap">Building <span class="highlight">BRANDS</span>, <span class="highlight">ASSETS</span> & custom <span class="highlight">SOFTWARE</span>.</span><br><br>
-      <span class="prompt">></span> <a href="#">CONTACT US →</a>
-    </div>
+  <div class="header">▶ SYSTEM ONLINE</div>
+  <div class="line">
+    <span class="prompt">></span> INNOVATING WITHOUT<br>
+    <span class="prompt">></span> FORGETTING TO BE CREATIVE<br><br>
+    <span class="prompt">></span> <span class="nowrap">Building <span class="highlight">BRANDS</span>, <span class="highlight">ASSETS</span> & custom <span class="highlight">SOFTWARE</span>.</span><br><br>
+    <span class="prompt">></span> <a href="#">CONTACT US →</a>
   </div>
 </body>
 </html>`;
 
-const width = 900;
-const height = 420;
+const width = 998;
+const height = 380;
 
 const browser = await puppeteer.launch({
   headless: true,
