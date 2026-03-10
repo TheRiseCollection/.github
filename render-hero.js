@@ -24,25 +24,22 @@ const html = `<!DOCTYPE html>
       line-height: 2.4;
       box-sizing: border-box;
       text-shadow: 0 0 4px #000, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(0,0,0,0.8);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
     .red { color: #e53935; text-shadow: 0 0 4px #000, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(229,57,53,0.6); }
+    .nowrap { white-space: nowrap; }
     a { color: #fff; text-decoration: none; font-size: 18px; }
   </style>
 </head>
 <body>
   INNOVATING WITHOUT<br>
   FORGETTING TO BE CREATIVE<br><br>
-  Building <span class="red">BRANDS</span>, <span class="red">ASSETS</span><br>
-  & custom <span class="red">SOFTWARE</span>.<br><br>
+  <span class="nowrap">Building <span class="red">BRANDS</span>, <span class="red">ASSETS</span> & custom <span class="red">SOFTWARE</span>.</span><br><br>
   <a href="#">CONTACT US →</a>
 </body>
 </html>`;
 
 const width = 900;
-const height = 560;
+const height = 800;
 
 const browser = await puppeteer.launch({
   headless: true,
@@ -56,7 +53,7 @@ await page.setContent(html);
 await new Promise(r => setTimeout(r, 2000));
 await page.screenshot({
   path: join(__dirname, 'profile/hero.png'),
-  clip: { x: 0, y: 0, width, height: 540 },
+  clip: { x: 0, y: 0, width, height },
 });
 await browser.close();
 console.log('hero.png created');
