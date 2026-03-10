@@ -14,72 +14,44 @@ const html = `<!DOCTYPE html>
   <style>
     * { margin: 0; padding: 0; }
     body {
-      background: #1a1a1a;
-      padding: 20px;
+      background: #000;
+      padding: 24px;
       font-family: 'Press Start 2P', monospace;
     }
     .terminal {
       width: 840px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      border: 2px solid #00ff41;
+      padding: 28px 32px;
+      background: #000;
+      box-shadow: 0 0 20px rgba(0,255,65,0.3), inset 0 0 60px rgba(0,255,65,0.03);
     }
-    .terminal-titlebar {
-      background: #2d2d2d;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+    .header {
+      color: #00ff41;
+      font-size: 8px;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px #00ff41;
     }
-    .terminal-dots {
-      display: flex;
-      gap: 6px;
-    }
-    .terminal-dots span {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-    }
-    .terminal-dots .red { background: #ff5f57; }
-    .terminal-dots .yellow { background: #febc2e; }
-    .terminal-dots .green { background: #28c840; }
-    .terminal-title {
-      color: #888;
-      font-size: 10px;
-      margin-left: 12px;
-    }
-    .terminal-body {
-      background: #0d1117;
-      color: #c9d1d9;
-      padding: 24px 28px;
+    .line {
+      color: #00ff41;
       font-size: 12px;
-      line-height: 2.4;
-      border: 1px solid #30363d;
-      border-top: none;
+      line-height: 2.6;
+      text-shadow: 0 0 8px rgba(0,255,65,0.8);
     }
-    .terminal-body .arrow { color: #3fb950; }
-    .terminal-body .red { color: #f85149; text-shadow: none; }
-    .prompt { color: #58a6ff; }
+    .prompt { color: #00ff41; }
+    .highlight { color: #39ff14; text-shadow: 0 0 12px #39ff14; }
     .nowrap { white-space: nowrap; }
-    a { color: #58a6ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a { color: #00ff41; text-decoration: none; text-shadow: 0 0 8px rgba(0,255,65,0.8); }
   </style>
 </head>
 <body>
   <div class="terminal">
-    <div class="terminal-titlebar">
-      <div class="terminal-dots">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
-      </div>
-      <span class="terminal-title">Terminal — TheRiseCollection</span>
-    </div>
-    <div class="terminal-body">
-      <span class="arrow">→</span> INNOVATING WITHOUT<br>
-      <span class="arrow">→</span> FORGETTING TO BE CREATIVE<br><br>
-      <span class="prompt">$</span> <span class="nowrap">Building <span class="red">BRANDS</span>, <span class="red">ASSETS</span> & custom <span class="red">SOFTWARE</span>.</span><br><br>
-      <span class="prompt">$</span> <a href="#">CONTACT US →</a>
+    <div class="header">▶ SYSTEM ONLINE</div>
+    <div class="line">
+      <span class="prompt">></span> INNOVATING WITHOUT<br>
+      <span class="prompt">></span> FORGETTING TO BE CREATIVE<br><br>
+      <span class="prompt">></span> <span class="nowrap">Building <span class="highlight">BRANDS</span>, <span class="highlight">ASSETS</span> & custom <span class="highlight">SOFTWARE</span>.</span><br><br>
+      <span class="prompt">></span> <a href="#">CONTACT US →</a>
     </div>
   </div>
 </body>
