@@ -15,18 +15,21 @@ const html = `<!DOCTYPE html>
     * { margin: 0; padding: 0; }
     body {
       font-family: 'Press Start 2P', monospace;
-      font-size: 14px;
+      font-size: 20px;
       background: #111;
       color: #fff;
-      padding: 24px;
-      width: 420px;
-      line-height: 2.2;
-      max-width: 100%;
+      padding: 40px 50px;
+      width: 800px;
+      min-height: 260px;
+      line-height: 2.4;
       box-sizing: border-box;
-      text-shadow: 0 0 3px #111, 0 1px 4px rgba(0,0,0,0.9), 0 2px 2px rgba(0,0,0,0.8);
+      text-shadow: 0 0 4px #111, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .red { color: #e53935; text-shadow: 0 0 3px #111, 0 1px 4px rgba(0,0,0,0.9), 0 2px 2px rgba(229,57,53,0.5); }
-    a { color: #fff; text-decoration: none; }
+    .red { color: #e53935; text-shadow: 0 0 4px #111, 0 2px 6px rgba(0,0,0,0.9), 0 3px 4px rgba(229,57,53,0.6); }
+    a { color: #fff; text-decoration: none; font-size: 18px; }
   </style>
 </head>
 <body>
@@ -38,8 +41,8 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`;
 
-const width = 468;
-const height = 220;
+const width = 900;
+const height = 340;
 
 const browser = await puppeteer.launch({
   headless: true,
@@ -53,7 +56,7 @@ await page.setContent(html);
 await new Promise(r => setTimeout(r, 2000));
 await page.screenshot({
   path: join(__dirname, 'profile/hero.png'),
-  clip: { x: 0, y: 0, width, height: 200 },
+  clip: { x: 0, y: 0, width, height: 320 },
 });
 await browser.close();
 console.log('hero.png created');
