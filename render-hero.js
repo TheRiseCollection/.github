@@ -42,7 +42,7 @@ const html = `<!DOCTYPE html>
 </html>`;
 
 const width = 900;
-const height = 340;
+const height = 560;
 
 const browser = await puppeteer.launch({
   headless: true,
@@ -56,7 +56,7 @@ await page.setContent(html);
 await new Promise(r => setTimeout(r, 2000));
 await page.screenshot({
   path: join(__dirname, 'profile/hero.png'),
-  clip: { x: 0, y: 0, width, height: 320 },
+  clip: { x: 0, y: 0, width, height: 540 },
 });
 await browser.close();
 console.log('hero.png created');
