@@ -1,10 +1,8 @@
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║  therisecollection@machine:~ $                                             ║
+║  therisecollection@machine:~                                                ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
-```
 
-```
 $ therisecollection --about
 
  INNOVATING WITHOUT FORGETTING TO BE CREATIVE
@@ -12,12 +10,6 @@ $ therisecollection --about
  Building BRANDS, ASSETS & custom SOFTWARE solutions.
  We ship across iOS, Android, Web, Steam, Unity & Unreal marketplaces.
 
-───────────────────────────────────────────────────────────────────────────────
-```
-
-## Project Intro
-
-```
 $ cat README
 
  THE RISE COLLECTION
@@ -26,13 +18,9 @@ $ cat README
  and custom software solutions. We develop arcade-style games, dev tools,
  3D assets, and web applications.
 
- $ echo $MISSION
- "Innovating without forgetting to be creative."
-```
+$ echo $MISSION
+"Innovating without forgetting to be creative."
 
-## Products
-
-```
 $ ls -la products/
 
  BL1NK              Mobile game
@@ -46,35 +34,11 @@ $ ls -la products/
  redlightcam®       Automotive brand
  + 3D assets (Spooky Pumpkin, Mr Bird, Orbiteer...)
 
-───────────────────────────────────────────────────────────────────────────────
-```
-
-## Installation
-
-```
 $ npm install -g @therisecollection/[package]
 
 # Or browse our collection
 $ open https://www.therisecollection.co
 
-───────────────────────────────────────────────────────────────────────────────
-```
-
-## Usage
-
-```
-$ # Visit our portfolio
-$ curl -s https://www.therisecollection.co | head -1
-
-$ # Check available products
-$ npm search therisecollection
-
-───────────────────────────────────────────────────────────────────────────────
-```
-
-## Features
-
-```
 $ therisecollection --features
 
  ✓ BRANDS    — Building lasting digital identities
@@ -82,12 +46,6 @@ $ therisecollection --features
  ✓ SOFTWARE  — Custom solutions, APIs, dev tools
  ✓ MULTI     — iOS · Android · Web · Steam · Unity · Unreal
 
-───────────────────────────────────────────────────────────────────────────────
-```
-
-## Tech Stack
-
-```
 $ cat tech-stack.txt
 
  JavaScript/TypeScript   Node.js   React   Vite
@@ -95,19 +53,9 @@ $ cat tech-stack.txt
  iOS · Android · Web
  npm · GitHub · Cloud
 
-───────────────────────────────────────────────────────────────────────────────
-```
-
-## Contributing
-
-```
-$ # Get in touch
 $ open https://www.therisecollection.co/about-us/#contact-us
 
-$ echo "CONTACT US →"
- https://www.therisecollection.co/about-us/#contact-us
-
-───────────────────────────────────────────────────────────────────────────────
+ CONTACT US → https://www.therisecollection.co/about-us/#contact-us
 
  therisecollection@machine:~ $
 ```
