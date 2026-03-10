@@ -15,16 +15,17 @@ const html = `<!DOCTYPE html>
     * { margin: 0; padding: 0; }
     body {
       font-family: 'Press Start 2P', monospace;
-      font-size: 9px;
+      font-size: 14px;
       background: #111;
       color: #fff;
-      padding: 20px;
-      width: 520px;
-      line-height: 2.4;
+      padding: 24px;
+      width: 420px;
+      line-height: 2.2;
       max-width: 100%;
       box-sizing: border-box;
+      text-shadow: 0 0 3px #111, 0 1px 4px rgba(0,0,0,0.9), 0 2px 2px rgba(0,0,0,0.8);
     }
-    .red { color: #e53935; }
+    .red { color: #e53935; text-shadow: 0 0 3px #111, 0 1px 4px rgba(0,0,0,0.9), 0 2px 2px rgba(229,57,53,0.5); }
     a { color: #fff; text-decoration: none; }
   </style>
 </head>
@@ -32,13 +33,13 @@ const html = `<!DOCTYPE html>
   INNOVATING WITHOUT<br>
   FORGETTING TO BE CREATIVE<br><br>
   Building <span class="red">BRANDS</span>, <span class="red">ASSETS</span><br>
-  & custom <span class="red">SOFTWARE</span> solutions.<br><br>
+  & custom <span class="red">SOFTWARE</span>.<br><br>
   <a href="#">CONTACT US →</a>
 </body>
 </html>`;
 
-const width = 560;
-const height = 200;
+const width = 468;
+const height = 220;
 
 const browser = await puppeteer.launch({
   headless: true,
@@ -52,7 +53,7 @@ await page.setContent(html);
 await new Promise(r => setTimeout(r, 2000));
 await page.screenshot({
   path: join(__dirname, 'profile/hero.png'),
-  clip: { x: 0, y: 0, width, height: 180 },
+  clip: { x: 0, y: 0, width, height: 200 },
 });
 await browser.close();
 console.log('hero.png created');
