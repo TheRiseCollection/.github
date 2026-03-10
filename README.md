@@ -1,9 +1,25 @@
-# THE RISE COLLECTION
+<div align="center">
 
-> Building brands, assets, and custom software.  
-> Arcade games · Dev tools · 3D assets · APIs · Web
+# ✦ THE RISE COLLECTION ✦
 
-Our work lives on **App Store**, **Google Play**, **Steam**, **Unity Asset Store**, and **Unreal Engine**.
+*Crafting innovative brands, digital assets, and custom software*
 
-→ [**View portfolio**](https://www.therisecollection.co)  
-→ [**Get in touch**](https://www.therisecollection.co/contact)
+[www.therisecollection.co](https://www.therisecollection.co)
+
+---
+
+**Games** · BL1NK · Stack 8 · Keep On Trucking · Attack Of The Circle · Baaridge  
+
+**Tools** · devKick · styleSweeper · processLogger  
+
+**APIs** · Dividend Chaser  
+
+**3D** · Unity Asset Store · Unreal Engine  
+
+**Brands** · [redlightcam®](https://redlightcam.co) · [controller-chat](https://www.npmjs.com/package/controller-chat)
+
+---
+
+*App Store · Google Play · Steam · Social · Web*
+
+</div>
