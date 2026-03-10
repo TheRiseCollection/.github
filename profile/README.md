@@ -1,8 +1,4 @@
 ```diff
-+ ╔══════════════════════════════════════════════════════════════════════════════╗
-+ ║  therisecollection@machine:~                                                ║
-+ ╚══════════════════════════════════════════════════════════════════════════════╝
-+
 - $ whois therisecollection.co
 +
 + THE RISE COLLECTION is a software company focused on innovative brands, digital
